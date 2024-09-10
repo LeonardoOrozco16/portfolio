@@ -1,0 +1,233 @@
+html
+    body
+        #content-section
+            padding: 100px 0
+        //#region  LOGO 
+        .logo-kuma
+            width: 180px
+            height: auto
+            margin: 0 auto
+            .kuma-external
+                fill: $logo_fill
+                stroke: $logo_fill
+                fill-opacity: 0
+                stroke-width: 10
+                stroke-dasharray: 3600
+                stroke-dashoffset: 3600
+                +animation(dash 5s linear forwards)
+                .kuma-diamond-left,.kuma-diamond-right
+                    fill: $blanco
+            +keyframe(dash)
+                90%
+                    fill-opacity: 0
+                100%
+                    fill-opacity: 1
+                    stroke-dashoffset: 0 
+        //#endregion
+
+        // #region Content Column
+        .content-col
+            border-radius: $small_br
+            padding: 20px
+        //#endregion
+        //#region RRSS Icon list
+        ul.rrss-icons
+            +ulst
+            text-align: center
+            margin-top: 20px
+            >li
+                +list
+                > a
+                    >.rrss-icon
+                        font-size: 2.5em
+                        line-height: 1
+                        > svg
+                            *
+                                +transition(0.5s)
+                            path
+                                +transition(0.5s)
+                            &:hover
+                                +transition(0.5s)
+                    
+        //#endregion
+        //#region Pill Linnk - btn
+        .pill
+            display: block
+            width: 100%
+            padding: 10px 20px
+            border-radius: $large_br
+            text-align: center
+            font-weight: 700
+            z-index: 2
+            +transition(.50s)
+        .neon-btn
+            padding: 3px
+            position: relative
+            display: inline-flex
+            overflow: hidden
+            border-radius: $large_br
+            width: 100%
+            &:before
+                content: ""
+                position: absolute
+                inset: -1000%
+                +animation(2s linear 0s infinite normal none running spin)
+        .gold
+            &:before
+                background-image: conic-gradient(from 90deg at 50% 50%, lighten( $oro,50%),$oro,lighten( $oro,50%))
+        .green
+            &:before
+                background-image: conic-gradient(from 90deg at 50% 50%, #51e4b8,#21554e,#51e4b8)
+        .ligthblue
+            &:before
+                background-image: conic-gradient(from 90deg at 50% 50%, $c_secondary,$c_primary,$c_secondary)
+        +keyframe(spin)
+            from
+                +transform(rotate(0deg))
+            to
+                +transform(rotate(360deg))
+        //#enregion
+        // #region Profile Column
+        #profile-wrapp
+            position: sticky
+            top: 0
+            #pic-wrapp
+                position: relative
+                padding: 30px 0
+                width: 80%
+                margin: 0 auto
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 15px
+                    height: 100%
+                    bottom: 0
+                    border-bottom: 15px solid transparent
+                    border-top: 15px solid transparent
+                    border-left: 15px solid $c_secondary
+                    z-index: 2
+                &:after
+                    content: ""
+                    position: absolute
+                    width: 80%
+                    height: 15px
+                    bottom: 0
+                    left: 0
+                    border-bottom: 15px solid $c_secondary
+                    border-right: 15px solid transparent
+                    border-left: 15px solid transparent
+                    z-index: 2
+                figure
+                    position: relative
+                    margin: 0 auto -20px
+                    padding: 20px
+                    &:before
+                        content: ""
+                        position: absolute
+                        width: 15px
+                        height: 100%
+                        bottom: 0
+                        left: 10px
+                        border-bottom: 15px solid transparent
+                        border-top: 15px solid transparent
+                        border-left: 15px solid $oro
+                        z-index: 0
+                    &:after
+                        content: ""
+                        position: absolute
+                        width: 68%
+                        height: 15px
+                        bottom: 0
+                        left: 0
+                        border-bottom: 15px solid $oro
+                        border-right: 15px solid transparent
+                        border-left: 15px solid transparent
+                        z-index: 0
+
+
+            h2
+                margin: 20px 0 10px
+                display: block
+                text-align: center
+                font-weight: 100
+                font-family: $fuente-detalles
+                span.name-strong
+                    font-weight: 700
+            h3
+                display: block
+                text-align: center
+                font-size: 14px
+                font-family: $fuente-detalles
+                font-weight: 400
+                line-height: 1
+                margin: -10px 0 20px
+            .cv-btn
+                margin-top: 20px
+        //#endregion
+        // #region: Content Blocks
+        section.content-block
+            header
+                h1
+                    text-transform: uppercase
+                    font-family: $fuente-detalles
+                    font-weight: 700
+                    position: relative
+                    > span
+                        font-weight: 100
+                    &:after
+                        content: " "
+                        position: absolute
+                        width: 100%
+                        height: 1px
+                        background: #000
+                        display: inline-block
+                        bottom: 0
+                        left: 0
+            &:not(:last-child)
+                margin-bottom: 100px
+        //#endregion
+        //#region Timeline
+        .timeline-wrapp
+            padding: 40px
+            .timeline-block
+                padding: 20px 40px
+                position: relative
+                &::before
+                    content: ""
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: $oro
+                    background: radial-gradient(circle at 100px 100px, $negro, $oro )
+                    border-radius: $fullround_br
+                    left: -9px
+                    z-index: 2
+                    top: 20%
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 2px
+                    height: 100%
+                    +bk_lgradient2c(to left, #898b8f,#bdc5d5)
+                    top: 0
+                    left: 0
+                .timeline-heading
+                    line-height: 1
+                    margin-bottom: 10px
+                    h2
+                        font-size: 20px
+                        text-transform: uppercase
+                        font-weight: 700
+                        color: $oro
+                        margin: 0
+                    h3
+                        font-size: 13px
+                        margin: 0
+                    .timeline-period
+                        font-size: 11px
+        #light-dark-switch
+            position: fixed
+            top: 10px
+            right: 30px
+@import "_light_contenido"
+@import "_dark_contenido"

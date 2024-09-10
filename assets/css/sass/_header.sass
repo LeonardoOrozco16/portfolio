@@ -1,0 +1,14 @@
+html
+    body
+        .navbar
+            border-radius: $small_br
+            margin-bottom: 50px
+        .section-head
+            z-index: 9999
+    &[data-bs-theme="dark"]
+        body
+            .navbar
+                background: $dmc_navbar_bg
+                .nav-link
+                    color: $dmc_detalles
+@import "_menu"

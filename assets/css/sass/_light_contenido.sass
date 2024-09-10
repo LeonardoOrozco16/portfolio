@@ -1,0 +1,72 @@
+html
+    &[data-bs-theme="light"]
+        body
+            background-color: $blanco
+            background-image: radial-gradient(80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0))
+            background-repeat: no-repeat	
+            &::-webkit-scrollbar-track
+                -webkit-box-shadow: inset 0 0 6px $sbc_shadow
+                border-radius: 10px
+                background-color: $sbc_track
+            &::-webkit-scrollbar
+                width: 11px
+                background-color: $sbc_track
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px
+                -webkit-box-shadow: inset 0 0 6px $sbc_shadow
+                background-color: $sbc_thumbbg
+            //#region  LOGO
+            .logo-kuma
+                .kuma-external
+                    fill: $logo_fill
+                    stroke: $logo_fill
+            //#endregion
+            // #region: Content Blocks
+            section.content-block
+                header
+                    h1
+                        &:after
+                            background-color: $c_primary
+            //#endregion
+            //#region RRSS Icon list
+            ul.rrss-icons
+                >li > a
+                    >.rrss-icon
+                        > svg
+                            path
+                                fill: $c_primary
+                    .github-icon
+                        &:hover
+                            path
+                                fill: $purpura
+                                
+                    .linkedin-icon
+                        &:hover
+                            > svg path
+                                fill: $azul
+                    .instagram-icon
+                        &:hover
+                            > svg 
+                                path
+                                    fill: url(#Gradient1)
+                                .stop1
+                                    stop-color: #8118fb
+                                .stop2
+                                    stop-color: #fe1f81
+                                .stop3
+                                    stop-color: #fecd00
+            //#endregion
+            //#region Pill Linnk - btn
+            .pill
+                background: $green_c
+                color: $green
+                &:hover
+                    background: $green
+                    color: $blanco
+            //#endregion
+            // #region: Content Blocks
+            section.content-block
+                 header
+                    h1
+                        color: $c_secondary
+            //#endregion
