@@ -207,17 +207,17 @@ html body #profile-wrapp #pic-wrapp figure:after, body body #profile-wrapp #pic-
   border-left: 15px solid transparent;
   z-index: 0;
 }
-html body #profile-wrapp h2, body body #profile-wrapp h2 {
+html body #profile-wrapp h1, body body #profile-wrapp h1 {
   margin: 20px 0 10px;
   display: block;
   text-align: center;
   font-weight: 100;
   font-family: "Onest", sans-serif;
 }
-html body #profile-wrapp h2 span.name-strong, body body #profile-wrapp h2 span.name-strong {
+html body #profile-wrapp h1 span.name-strong, body body #profile-wrapp h1 span.name-strong {
   font-weight: 700;
 }
-html body #profile-wrapp h3, body body #profile-wrapp h3 {
+html body #profile-wrapp h2, body body #profile-wrapp h2 {
   display: block;
   text-align: center;
   font-size: 14px;
@@ -229,16 +229,16 @@ html body #profile-wrapp h3, body body #profile-wrapp h3 {
 html body #profile-wrapp .cv-btn, body body #profile-wrapp .cv-btn {
   margin-top: 20px;
 }
-html body section.content-block header h1, body body section.content-block header h1 {
+html body section.content-block header .title-section, body body section.content-block header .title-section {
   text-transform: uppercase;
   font-family: "Onest", sans-serif;
   font-weight: 700;
   position: relative;
 }
-html body section.content-block header h1 > span, body body section.content-block header h1 > span {
+html body section.content-block header .title-section > span, body body section.content-block header .title-section > span {
   font-weight: 100;
 }
-html body section.content-block header h1:after, body body section.content-block header h1:after {
+html body section.content-block header .title-section:after, body body section.content-block header .title-section:after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -283,14 +283,14 @@ html body .timeline-wrapp .timeline-block .timeline-heading, body body .timeline
   line-height: 1;
   margin-bottom: 10px;
 }
-html body .timeline-wrapp .timeline-block .timeline-heading h2, body body .timeline-wrapp .timeline-block .timeline-heading h2 {
+html body .timeline-wrapp .timeline-block .timeline-heading .timeline-title, body body .timeline-wrapp .timeline-block .timeline-heading .timeline-title {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
   color: #c4a83b;
   margin: 0;
 }
-html body .timeline-wrapp .timeline-block .timeline-heading h3, body body .timeline-wrapp .timeline-block .timeline-heading h3 {
+html body .timeline-wrapp .timeline-block .timeline-heading .timeline-charge, body body .timeline-wrapp .timeline-block .timeline-heading .timeline-charge {
   font-size: 13px;
   margin: 0;
 }
@@ -381,7 +381,7 @@ html[data-bs-theme=dark] body::-webkit-scrollbar-thumb, body[data-bs-theme=dark]
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(3, 56, 201, 0.5);
 }
-html[data-bs-theme=dark] body section.content-block header h1:after, body[data-bs-theme=dark] body section.content-block header h1:after {
+html[data-bs-theme=dark] body section.content-block header .title-section:after, body[data-bs-theme=dark] body section.content-block header .title-section:after {
   background-color: #c4a83b;
 }
 html[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path, body[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path {
