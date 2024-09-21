@@ -14,7 +14,7 @@ html
                 stroke-width: 10
                 stroke-dasharray: 3600
                 stroke-dashoffset: 3600
-                +animation(dash 5s linear forwards)
+                +animation(dash 3s linear forwards)
                 .kuma-diamond-left,.kuma-diamond-right
                     fill: $blanco
             +keyframe(dash)
@@ -166,12 +166,15 @@ html
         //#endregion
         // #region: Content Blocks
         section.content-block
+            padding-top: 100px
             header
                 .title-section
                     text-transform: uppercase
                     font-family: $fuente-detalles
                     font-weight: 700
                     position: relative
+                    margin-bottom: 20px
+                    color: $c_primary
                     > span
                         font-weight: 100
                     &:after
@@ -179,14 +182,12 @@ html
                         position: absolute
                         width: 100%
                         height: 1px
-                        background: #000
+                        background: linear-gradient(to right, $c_primary,transparent)
                         display: inline-block
-                        bottom: 0
+                        bottom: -3px
                         left: 0
-            &:not(:last-child)
-                margin-bottom: 100px
         //#endregion
-        //#region Timeline
+        /*#region Timeline*/
         .timeline-wrapp
             padding: 40px
             .timeline-block
@@ -225,9 +226,80 @@ html
                         margin: 0
                     .timeline-period
                         font-size: 11px
+        /*endregion */
+        //#region Skill Tree
+        #skill-tree
+            position: relative
+            margin: 30px auto 0
+            padding: 0
+            list-style: none
+            > li
+                display: inline-block
+            .skill-tree-item
+                position: relative
+                .skill-tree-icon
+                    width: 100px
+                    height: 100px
+                    opacity: 0.7
+                    +transition(.50s)
+                    svg
+                        height: -webkit-fill-available
+                        max-height: 100px
+                        width: 100%
+                &:hover
+                    .skill-tree-icon
+                        opacity: 1
+        //#endregion
         #light-dark-switch
             position: fixed
             top: 10px
             right: 30px
+        /*#region Hire me */
+        #hire-me
+            margin: 30px auto
+            article
+                display: flex
+                flex-direction: row
+                main
+                    flex-grow: 1
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-direction: column
+                    h2,h3
+                        font-family: $fuente-detalles
+                        text-transform: uppercase
+                        text-align: left
+                        display: block
+                        width: 100%
+                    h2
+                        font-weight: 100
+                        font-size: 1.8rem
+                        span
+                            font-family: $fuente-pagina
+                            font-weight: 700
+                            color: $oro
+                    h3
+                        color: $c_secondary
+                        font-size: 1.5rem
+                        font-weight: 700
+                aside
+                    flex-grow: 250px
+                    .contact-links
+                        list-style: none
+                        li
+                            .call-to-hire
+                                padding: 5px 10px
+                                background: transparent
+                                width: 100%
+                                display: block
+                                border-radius: 5px
+                                +transition(.50s)
+                                &:hover
+                                    border-color: $c_secondary
+                                    color: $c_secondary
+                            &:not(:last-child)
+                                margin-bottom: 10px
+        /*#region Hire me */
 @import "_light_contenido"
 @import "_dark_contenido"

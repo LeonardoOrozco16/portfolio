@@ -49,6 +49,12 @@ body .navbar-icons-nav ul.menu > li > a .knowledge-icon .book, body .navbar-icon
 /* Menu */
 /* Header */
 /* Contenido */
+html body, body body {
+  /*#region Timeline*/
+  /*endregion */
+  /*#region Hire me */
+  /*#region Hire me */
+}
 html body #content-section, body body #content-section {
   padding: 100px 0;
 }
@@ -64,7 +70,7 @@ html body .logo-kuma .kuma-external, body body .logo-kuma .kuma-external {
   stroke-width: 10;
   stroke-dasharray: 3600;
   stroke-dashoffset: 3600;
-  animation: dash 5s linear forwards;
+  animation: dash 3s linear forwards;
 }
 html body .logo-kuma .kuma-external .kuma-diamond-left, body body .logo-kuma .kuma-external .kuma-diamond-left, html body .logo-kuma .kuma-external .kuma-diamond-right, body body .logo-kuma .kuma-external .kuma-diamond-right {
   fill: #fff;
@@ -229,11 +235,16 @@ html body #profile-wrapp h2, body body #profile-wrapp h2 {
 html body #profile-wrapp .cv-btn, body body #profile-wrapp .cv-btn {
   margin-top: 20px;
 }
+html body section.content-block, body body section.content-block {
+  padding-top: 100px;
+}
 html body section.content-block header .title-section, body body section.content-block header .title-section {
   text-transform: uppercase;
   font-family: "Onest", sans-serif;
   font-weight: 700;
   position: relative;
+  margin-bottom: 20px;
+  color: #01113d;
 }
 html body section.content-block header .title-section > span, body body section.content-block header .title-section > span {
   font-weight: 100;
@@ -243,13 +254,10 @@ html body section.content-block header .title-section:after, body body section.c
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #000;
+  background: linear-gradient(to right, #01113d, transparent);
   display: inline-block;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
-}
-html body section.content-block:not(:last-child), body body section.content-block:not(:last-child) {
-  margin-bottom: 100px;
 }
 html body .timeline-wrapp, body body .timeline-wrapp {
   padding: 40px;
@@ -297,10 +305,92 @@ html body .timeline-wrapp .timeline-block .timeline-heading .timeline-charge, bo
 html body .timeline-wrapp .timeline-block .timeline-heading .timeline-period, body body .timeline-wrapp .timeline-block .timeline-heading .timeline-period {
   font-size: 11px;
 }
+html body #skill-tree, body body #skill-tree {
+  position: relative;
+  margin: 30px auto 0;
+  padding: 0;
+  list-style: none;
+}
+html body #skill-tree > li, body body #skill-tree > li {
+  display: inline-block;
+}
+html body #skill-tree .skill-tree-item, body body #skill-tree .skill-tree-item {
+  position: relative;
+}
+html body #skill-tree .skill-tree-item .skill-tree-icon, body body #skill-tree .skill-tree-item .skill-tree-icon {
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+html body #skill-tree .skill-tree-item .skill-tree-icon svg, body body #skill-tree .skill-tree-item .skill-tree-icon svg {
+  height: -webkit-fill-available;
+  max-height: 100px;
+  width: 100%;
+}
+html body #skill-tree .skill-tree-item:hover .skill-tree-icon, body body #skill-tree .skill-tree-item:hover .skill-tree-icon {
+  opacity: 1;
+}
 html body #light-dark-switch, body body #light-dark-switch {
   position: fixed;
   top: 10px;
   right: 30px;
+}
+html body #hire-me, body body #hire-me {
+  margin: 30px auto;
+}
+html body #hire-me article, body body #hire-me article {
+  display: flex;
+  flex-direction: row;
+}
+html body #hire-me article main, body body #hire-me article main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body #hire-me article main h2, body body #hire-me article main h2, html body #hire-me article main h3, body body #hire-me article main h3 {
+  font-family: "Onest", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+html body #hire-me article main h2, body body #hire-me article main h2 {
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+html body #hire-me article main h2 span, body body #hire-me article main h2 span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #c4a83b;
+}
+html body #hire-me article main h3, body body #hire-me article main h3 {
+  color: #0338c9;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+html body #hire-me article aside, body body #hire-me article aside {
+  flex-grow: 250px;
+}
+html body #hire-me article aside .contact-links, body body #hire-me article aside .contact-links {
+  list-style: none;
+}
+html body #hire-me article aside .contact-links li .call-to-hire, body body #hire-me article aside .contact-links li .call-to-hire {
+  padding: 5px 10px;
+  background: transparent;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+html body #hire-me article aside .contact-links li .call-to-hire:hover, body body #hire-me article aside .contact-links li .call-to-hire:hover {
+  border-color: #0338c9;
+  color: #0338c9;
+}
+html body #hire-me article aside .contact-links li:not(:last-child), body body #hire-me article aside .contact-links li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 html[data-bs-theme=light] body, body[data-bs-theme=light] body {
@@ -381,8 +471,11 @@ html[data-bs-theme=dark] body::-webkit-scrollbar-thumb, body[data-bs-theme=dark]
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(3, 56, 201, 0.5);
 }
+html[data-bs-theme=dark] body section.content-block header .title-section, body[data-bs-theme=dark] body section.content-block header .title-section {
+  color: #fff;
+}
 html[data-bs-theme=dark] body section.content-block header .title-section:after, body[data-bs-theme=dark] body section.content-block header .title-section:after {
-  background-color: #c4a83b;
+  background: linear-gradient(to right, #c4a83b, transparent);
 }
 html[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path, body[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path {
   fill: #0338c9;
