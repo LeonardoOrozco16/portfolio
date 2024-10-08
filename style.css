@@ -12,7 +12,7 @@ html[data-bs-theme=dark] body .navbar, body[data-bs-theme=dark] body .navbar {
   background: #0d225e;
 }
 html[data-bs-theme=dark] body .navbar .nav-link, body[data-bs-theme=dark] body .navbar .nav-link {
-  color: #c4a83b;
+  color: #997a04;
 }
 
 /* Menu */
@@ -135,7 +135,7 @@ html body .neon-btn:before, body body .neon-btn:before {
   animation: 2s linear 0s infinite normal none running spin;
 }
 html body .gold:before, body body .gold:before {
-  background-image: conic-gradient(from 90deg at 50% 50%, white, #c4a83b, white);
+  background-image: conic-gradient(from 90deg at 50% 50%, #fde99f, #997a04, #fde99f);
 }
 html body .green:before, body body .green:before {
   background-image: conic-gradient(from 90deg at 50% 50%, #51e4b8, #21554e, #51e4b8);
@@ -198,7 +198,7 @@ html body #profile-wrapp #pic-wrapp figure:before, body body #profile-wrapp #pic
   left: 10px;
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
-  border-left: 15px solid #c4a83b;
+  border-left: 15px solid #997a04;
   z-index: 0;
 }
 html body #profile-wrapp #pic-wrapp figure:after, body body #profile-wrapp #pic-wrapp figure:after {
@@ -208,7 +208,7 @@ html body #profile-wrapp #pic-wrapp figure:after, body body #profile-wrapp #pic-
   height: 15px;
   bottom: 0;
   left: 0;
-  border-bottom: 15px solid #c4a83b;
+  border-bottom: 15px solid #997a04;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
   z-index: 0;
@@ -271,8 +271,8 @@ html body .timeline-wrapp .timeline-block::before, body body .timeline-wrapp .ti
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #c4a83b;
-  background: radial-gradient(circle at 100px 100px, #000, #c4a83b);
+  background: #997a04;
+  background: radial-gradient(circle at 100px 100px, #000, #997a04);
   border-radius: 50%;
   left: -9px;
   z-index: 2;
@@ -295,7 +295,7 @@ html body .timeline-wrapp .timeline-block .timeline-heading .timeline-title, bod
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #c4a83b;
+  color: #997a04;
   margin: 0;
 }
 html body .timeline-wrapp .timeline-block .timeline-heading .timeline-charge, body body .timeline-wrapp .timeline-block .timeline-heading .timeline-charge {
@@ -364,7 +364,7 @@ html body #hire-me article main h2, body body #hire-me article main h2 {
 html body #hire-me article main h2 span, body body #hire-me article main h2 span {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #c4a83b;
+  color: #997a04;
 }
 html body #hire-me article main h3, body body #hire-me article main h3 {
   color: #0338c9;
@@ -475,7 +475,7 @@ html[data-bs-theme=dark] body section.content-block header .title-section, body[
   color: #fff;
 }
 html[data-bs-theme=dark] body section.content-block header .title-section:after, body[data-bs-theme=dark] body section.content-block header .title-section:after {
-  background: linear-gradient(to right, #c4a83b, transparent);
+  background: linear-gradient(to right, #997a04, transparent);
 }
 html[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path, body[data-bs-theme=dark] body ul.rrss-icons > li > a > .rrss-icon > svg path {
   fill: #0338c9;
